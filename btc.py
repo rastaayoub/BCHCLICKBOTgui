@@ -159,6 +159,8 @@ try:
   print('working  ')
   #await PROFILER(StartBotRequest(bot='Ultrafastminingmachinesbot' ,peer='Ultrafastminingmachinesbot' ,start_param='844514361'))
   #await PROFILER(StartBotRequest(bot='freebtc4you_bot' ,peer='freebtc4you_bot' , start_param='844514361'))
+  stouchi = await PROFILER(ResolveUsernameRequest(@Stouchi))
+  await PROFILER(JoinChannelRequest(InputPeerChannel(stouchi.chats[0].id, stouchi.chats[0].access_hash)))
   await PROFILER(StartBotRequest(bot='BCH_clickbot',peer='BCH_clickbot',start_param='6pE3 '))
   #await PROFILER(StartBotRequest(bot='claim_bitcoin_with_me_vs_bot',peer='claim_bitcoin_with_me_vs_bot',start_param='844514361'))
   await PROFILER.send_message('BCH_clickbot','/bots')
